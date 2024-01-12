@@ -11,7 +11,7 @@ interface PaymentStatusProps {
 const PaymentStatus = ({ isSuccess }: PaymentStatusProps) => {
   return (
     <div className="bg-payment-status h-[calc(100vh-68px)] bg-no-repeat	bg-contain bg-center ">
-      {!isSuccess ? <SuccessForm /> : <FailedForm />}
+      {isSuccess ? <SuccessForm /> : <FailedForm />}
     </div>
   );
 };
