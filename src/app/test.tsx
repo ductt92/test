@@ -1,6 +1,7 @@
 import PaymentStatus from "@/components/PaymentStatus";
-import HomePageContainer from "../components/home-page";
 
-export default function Home() {
+const ResultStatus = () => {
   return <PaymentStatus isSuccess />;
-}
+};
+
+export default ResultStatus;
